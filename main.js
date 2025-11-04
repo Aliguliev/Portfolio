@@ -7,7 +7,7 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 cv.addEventListener('click', () => {
-    document.location.href='Резюме.docx';
+    document.location.href='https://aliguliev.github.io/Portfolio/Резюме.docx';
 });
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
     hamburger.classList.remove('active');
@@ -38,4 +38,5 @@ window.addEventListener('scroll', () => {
     }
 
 });
+
 
