@@ -99,62 +99,7 @@ body{
 }
 
 /* Адаптивность для мобильных устройств */
-@media screen and (max-width: 768px) {
-    .navbar {
-        padding: 0 15px;
-    }
 
-    /* Показываем бургер-меню */
-    .hamburger {
-        display: flex;
-        background: #333;
-    }
-
-    /* Скрываем обычное меню */
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background: #333;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-        padding: 20px 0;
-        gap: 0;
-    }
-
-    /* Активный класс для показа меню */
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 15px 0;
-    }
-
-    .nav-link {
-        padding: 15px;
-        display: block;
-        font-size: 18px;
-    }
-
-    /* Анимация бургер-меню в крестик */
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
-/* Дополнительные стили для контента */
 /* main {
     margin-top: 70px;
     padding: 20px;
@@ -403,5 +348,94 @@ form button{
         gap: 30PX;
     }
 
-
 }
+/* Адаптивность для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0 15px;
+    }
+
+    /* Показываем бургер-меню */
+    .hamburger {
+        display: flex;
+        background: #333;
+    }
+
+    /* Скрываем обычное меню */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background: #333;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        gap: 0;
+    }
+
+    /* Активный класс для показа меню */
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+    }
+
+    .nav-link {
+        padding: 15px;
+        display: block;
+        font-size: 18px;
+    }
+
+    /* Анимация бургер-меню в крестик */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .home-info{
+        width: 80%;
+        text-align: center;
+    }
+    .cont{
+        padding: 10% 2%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .my_stack div{
+        gap: 20px;
+    }
+    .projects{
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .project img{
+        width: 80%;
+    }
+    .project{
+        text-align: center;
+    }
+    form button{
+        width: 60%;
+    }
+
+    .my_nameV2{
+        font-size: 100%;
+    }
+    .cont-head{
+        margin-bottom: 10%;
+    }
+}
+
