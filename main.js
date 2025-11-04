@@ -1,12 +1,14 @@
 
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
-
+const cv = document.getElementById('cv');
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
 });
-
+cv.addEventListener('click', () => {
+    document.location.href='/Резюме.docx';
+});
 document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
@@ -24,7 +26,7 @@ document.addEventListener('click', (e) => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.opacity = 0.5;
+        navbar.style.opacity = 0.9;
         
     } else {
         navbar.style.background = '#333';
@@ -34,4 +36,5 @@ window.addEventListener('scroll', () => {
         navbar.style.opacity = 1;
         
     }
+
 });
